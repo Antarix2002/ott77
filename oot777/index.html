@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REDDY ANNA Official - Since 2010</title>
+  <meta name="description" content="REDDY ANNA Official - Since 2010. Get ID Now for sports betting. 24 hour refill and return service.">
+  
+  <style>
+    /* REDDY ANNA Color Scheme */
+    :root {
+      --primary-gold: #FFD700;
+      --primary-black: #000000;
+      --whatsapp-green: #25D366;
+      --text-white: #FFFFFF;
+      --gold-border: #DAA520;
+    }
+
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: var(--primary-black);
+      color: var(--text-white);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Main container with gold border frame */
+    .main-frame {
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      min-height: 100vh;
+    }
+
+
+    /* Container content */
+    .container {
+        padding: 40px 20px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .main-frame>div{
+        background-color: var(--primary-black);
+        background-image: url('./AUTO_DEPOSIT.png'), 
+                          url('./AUTO%20DEPOSIT.png'),
+                          linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+        background-size: cover, cover, 100% 100%;
+        background-position: center center, center center, center;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-attachment: local;
+        min-height: 100vh;
+        border: 8px solid var(--primary-gold);
+        border-radius: 0;
+        overflow: hidden;
+        box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        position: relative;
+        min-height: calc(var(--vh, 1vh) * 100);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+
+    /* WhatsApp buttons section */
+    .whatsapp-buttons {
+        width: 80%;
+        max-width: 400px;
+        display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .whatsapp-btn {
+      background: linear-gradient(135deg, var(--whatsapp-green), #1da851);
+      color: white;
+      padding: 15px 25px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      position: relative;
+      overflow: hidden;
+      animation: pulse-button 2s infinite;
+    }
+
+    .whatsapp-btn:hover {
+      background: linear-gradient(135deg, #1da851, var(--whatsapp-green));
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .whatsapp-btn:active {
+      transform: translateY(-1px) scale(0.98);
+    }
+
+    .whatsapp-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.6s;
+    }
+
+    .whatsapp-btn:hover::before {
+      left: 100%;
+    }
+
+    .whatsapp-icon {
+      width: 24px;
+      height: 24px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+      animation: pulse-icon 2s infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes pulse-icon {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    @keyframes pulse-button {
+      0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      }
+      50% { 
+        transform: scale(1.03);
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+      }
+    }
+
+    /* Staggered pulse animations for each button */
+    .whatsapp-btn:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .whatsapp-btn:nth-child(2) {
+      animation-delay: 0.7s;
+    }
+
+    .whatsapp-btn:nth-child(3) {
+      animation-delay: 1.4s;
+    }
+
+    /* Pause animation on hover */
+    .whatsapp-btn:hover {
+      animation-play-state: paused;
+    }
+
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .main-frame {
+        border-width: 4px;
+        min-height: 100vh;
+        min-height: calc(var(--vh, 1vh) * 100);
+      }
+      
+      .container {
+        padding: 30px 20px;
+        max-width: 100%;
+      }
+      
+      .main-frame>div {
+        background-attachment: scroll;
+        background-size: cover;
+      }
+      
+      .whatsapp-buttons {
+        gap: 12px;
+        margin: 25px 0;
+      }
+      
+      .whatsapp-btn {
+        padding: 12px 20px;
+        font-size: 1.1rem;
+        gap: 10px;
+      }
+      
+      .whatsapp-icon {
+        width: 20px;
+        height: 20px;
+      }
+      
+    }
+
+    @media (max-width: 480px) {
+      .main-frame {
+        border-width: 2px;
+      }
+      
+      .container {
+        padding: 20px 15px;
+        max-width: 100%;
+      }
+      
+      .main-frame>div {
+        background-size: cover;
+        background-position: center;
+      }
+      
+      .whatsapp-buttons {
+        gap: 10px;
+        margin: 20px 0;
+      }
+      
+      .whatsapp-btn {
+        padding: 10px 15px;
+        font-size: 1rem;
+        gap: 8px;
+        border-radius: 25px;
+      }
+      
+      .whatsapp-icon {
+        width: 18px;
+        height: 18px;
+      }
+      
+    }
+
+    /* Extra small screens */
+    @media (max-width: 320px) {
+      .container {
+        padding: 15px 10px;
+      }
+      
+      .whatsapp-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        gap: 6px;
+      }
+      
+      .whatsapp-icon {
+        width: 16px;
+        height: 16px;
+      }
+      
+    }
+
+    /* Loading animation */
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--primary-black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    }
+
+    .loading-overlay.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid rgba(255, 215, 0, 0.3);
+      border-top: 4px solid var(--primary-gold);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Main Frame -->
+  <div class="main-frame">
+    <div class="container">
+      <!-- WhatsApp Buttons -->
+      <div class="whatsapp-buttons">
+        <a href="#" class="whatsapp-btn" id="whatsappBtn1">
+          <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path fill="#ffffff" d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/>
+          </svg>
+          <span>Get ID Now</span>
+        </a>
+        <a href="#" class="whatsapp-btn" id="whatsappBtn2">
+          <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path fill="#ffffff" d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/>
+          </svg>
+          <span>Get ID Now</span>
+        </a>
+        <a href="#" class="whatsapp-btn" id="whatsappBtn3">
+          <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path fill="#ffffff" d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/>
+          </svg>
+          <span>Get ID Now</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    class ReddyAnnaApp {
+      constructor() {
+        this.init();
+        this.setupEventListeners();
+      }
+
+      init() {
+        // Hide loading screen
+        window.addEventListener('load', () => {
+          setTimeout(() => {
+            document.getElementById('loadingOverlay').classList.add('fade-out');
+          }, 1000);
+        });
+
+        // Set viewport height for mobile
+        this.setViewportHeight();
+        window.addEventListener('resize', () => this.setViewportHeight());
+        window.addEventListener('orientationchange', () => {
+          setTimeout(() => this.setViewportHeight(), 100);
+        });
+
+        // Track page view
+        this.trackEvent('page_view', { page: 'reddy_anna_official' });
+      }
+
+      setViewportHeight() {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+
+      setupEventListeners() {
+        // WhatsApp buttons
+        document.querySelectorAll('.whatsapp-btn').forEach((btn, index) => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.openWhatsApp(`Button ${index + 1} clicked`);
+          });
+        });
+
+        // Touch events for mobile
+        this.setupTouchEvents();
+      }
+
+
+      openWhatsApp(customMessage = '') {
+        const whatsappUrl = 'https://wa.link/ott777id';
+        
+        try {
+          window.open(whatsappUrl, '_blank');
+          this.trackEvent('whatsapp_click', { url: whatsappUrl });
+        } catch (error) {
+          console.error('Error opening WhatsApp:', error);
+          this.showNotification('Unable to open WhatsApp. Please try again.', 'error');
+        }
+      }
+
+      setupTouchEvents() {
+        const touchElements = document.querySelectorAll('.whatsapp-btn');
+        
+        touchElements.forEach(element => {
+          element.addEventListener('touchstart', () => {
+            element.style.opacity = '0.8';
+          });
+          
+          element.addEventListener('touchend', () => {
+            setTimeout(() => {
+              element.style.opacity = '';
+            }, 150);
+          });
+        });
+      }
+
+      showNotification(message, type = 'info') {
+        const notification = document.createElement('div');
+        notification.textContent = message;
+        
+        Object.assign(notification.style, {
+          position: 'fixed',
+          top: '20px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          padding: '12px 20px',
+          borderRadius: '6px',
+          color: 'white',
+          fontWeight: 'bold',
+          zIndex: '10000',
+          opacity: '0',
+          transition: 'all 0.3s ease',
+          maxWidth: '90%',
+          textAlign: 'center',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.5)'
+        });
+
+        const colors = {
+          info: '#FFD700',
+          success: '#25D366',
+          error: '#dc3545'
+        };
+        notification.style.backgroundColor = colors[type] || colors.info;
+        notification.style.color = type === 'info' ? '#000' : '#fff';
+
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+          notification.style.opacity = '1';
+          notification.style.transform = 'translateX(-50%) translateY(10px)';
+        }, 100);
+
+        setTimeout(() => {
+          notification.style.opacity = '0';
+          setTimeout(() => {
+            if (notification.parentNode) {
+              notification.parentNode.removeChild(notification);
+            }
+          }, 300);
+        }, 3000);
+      }
+
+      trackEvent(eventName, data = {}) {
+        console.log('Event tracked:', {
+          event: eventName,
+          data,
+          timestamp: new Date().toISOString(),
+          userAgent: navigator.userAgent
+        });
+      }
+    }
+
+    // Initialize the app
+    document.addEventListener('DOMContentLoaded', () => {
+      window.reddyAnnaApp = new ReddyAnnaApp();
+    });
+  </script>
+</body>
+</html>
